@@ -1,0 +1,113 @@
+{
+  "type": "object",
+  "required": [
+    "employeeId",
+    "name",
+    "permanent_address",
+    "city",
+    "dob",
+    "contact",
+    "company_mailid"
+  ],
+  "properties": {
+    "employeeId": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "career_start_date": {
+      "type": "string"
+    },
+    "neoito_start_date": {
+      "type": "string"
+    },
+    "total_years": {
+      "type": "string"
+    },
+    "neoito_years": {
+      "type": "string"
+    },
+    "ctc_exclude_gratuity": {
+      "type": "string"
+    },
+    "effective_gratuity": {
+      "type": "string"
+    },
+    "qualification": {
+      "type": "string"
+    },
+    "bonus": {
+      "type": "string"
+    },
+    "front_end_skills": {
+      "type": "string"
+    },
+    "back_end_skills": {
+      "type": "string"
+    },
+    "db_skills": {
+      "type": "string"
+    },
+    "cloud_skills": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "string"
+    },
+    "department": {
+      "type": "string"
+    },
+    "pm": {
+      "type": "string"
+    },
+    "reporting": {
+      "type": "string"
+    },
+    "additional_reporting": {
+      "type": "string"
+    },
+    "permanent_address": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "present_address": {
+      "type": "string"
+    },
+    "dob": {
+      "type": "string"
+    },
+    "age": {
+      "type": "string"
+    },
+    "contact": {
+      "type": "string"
+    },
+    "emergency_contact": {
+      "type": "string"
+    },
+    "company_mailid": {
+      "type": "string"
+    },
+    "personal_mailid": {
+      "type": "string"
+    },
+    "blood_group": {
+      "type": "string"
+    },
+    "office_location": {
+      "type": "string"
+    },
+    "office_status": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "project_name": {
+      "type": "string"
+    }
+  }
+}

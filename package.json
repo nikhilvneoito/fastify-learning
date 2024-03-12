@@ -1,0 +1,7 @@
+{
+  "type": "module",
+  "dependencies": {
+    "better-sqlite3": "^9.4.3",
+    "fastify-sqlite": "^1.1.0"
+  }
+}
