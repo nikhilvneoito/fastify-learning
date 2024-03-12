@@ -257,6 +257,7 @@ fastify.get("/getemployee/:employeeId", async (request, reply) => {
 try {
   await fastify.listen({ port: 3000 });
 } catch (err) {
-  fastify.log(err);
+  // fastify.log(err);
+  console.log("error ", err);
   process.exit(1);
 }
