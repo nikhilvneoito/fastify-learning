@@ -1,14 +1,5 @@
 {
   "type": "object",
-  "required": [
-    "employeeId",
-    "name",
-    "permanent_address",
-    "city",
-    "dob",
-    "contact",
-    "company_mailid"
-  ],
   "properties": {
     "employeeId": {
       "type": "string"
