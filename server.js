@@ -143,7 +143,8 @@ fastify.post("/addemployee", { schema }, async (request, reply) => {
 fastify.get("/getemployees", async (request, reply) => {
   try {
     const employees = GET_EMPLOYEES_QUERY.all();
-    return { employees, total_count: employees?.length };
+    return employees;
+    // return { employees, total_count: employees?.length };
   } catch (error) {
     console.error(error);
     reply.status(500).send({ error: "Internal Server Error" });

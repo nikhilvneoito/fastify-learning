@@ -8,6 +8,8 @@ export const CREATETABLEQUERY = `
     name TEXT NOT NULL
     );
     `;
+db.exec(CREATETABLEQUERY);
+
 export const CREATETODOQUERY = db.prepare(
   "INSERT OR REPLACE INTO todos (id, name) VALUES (?, ?)"
 );
@@ -48,7 +50,7 @@ export const CREATE_EMPLOYEE_TABLE_QUERY = `CREATE TABLE IF NOT EXISTS employees
   gender TEXT,
   project_name TEXT
 );`;
-
+db.exec(CREATE_EMPLOYEE_TABLE_QUERY);
 export const GET_EMPLOYEES_QUERY = db.prepare("SELECT * FROM employees");
 export const GET_EMPLOYEE_BY_ID_QUERY = db.prepare(
   "SELECT * FROM employees WHERE employeeId = ?"
@@ -101,8 +103,7 @@ export const UPDATE_EMPLOYEE_SKILLS_QUERY = db.prepare(
   "UPDATE employees SET front_end_skills = ?, back_end_skills = ?, db_skills = ?, cloud_skills = ? WHERE employeeId = ?"
 );
 
-// db.exec(CREATETABLEQUERY);
-db.exec(CREATE_EMPLOYEE_TABLE_QUERY);
+console.log("creating todos table....");
 
 export const schema = {
   body: bodySchema,
